@@ -1,0 +1,983 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(249, 247, 238);
+}
+
+
+/* <!----------------------------------------
+   Header Start ---------------------------------> */
+
+   header{
+    background-color: rgb(248, 247, 238);
+    display: flex;
+    width: 100%;
+    padding: 3px 0px 0px 0px; 
+    justify-content: space-between;
+    align-items: center;  
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo img{
+    width: 60px;
+    height: 60px;
+    margin-left: 100px; 
+}
+
+.navbar{
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: 550;
+    margin-left: 380px;
+}
+
+.navbar a{
+    color: black; 
+}
+
+.navbar a:hover{
+    color: rgb(3, 151, 70);
+    border-bottom: 3px solid rgb(3, 151, 70);
+    transition: .5s;
+}
+
+.topbar{
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    color: rgb(3, 151, 70);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 130px;
+    border: 2px solid rgb(3, 151, 70);
+    background: transparent;
+}
+
+.topbar:hover{
+    background-color:rgb(3, 151, 70);
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+@media (max-width: 768px) {
+    header{
+        padding: 3px 0px 0px 0px; 
+    }
+
+    .logo img{
+        margin-left: 5px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .topbar{
+        display: none;
+    }
+}
+
+@media (max-width: 375px){
+
+    header{
+        padding: 5px 0px 0px 0px; 
+    }
+
+    .logo img{
+        margin-left: 10px;
+        width: 80px;
+        height:80px;
+    }
+
+}
+
+/* <!----------------------------------------
+   Header End ---------------------------------> */
+
+
+/* <!-------------------
+---------------------
+   about page start ------------
+   ---------------------> */   
+
+
+.aboutus{
+    background-color: rgb(242, 240, 230);
+    display: flex;
+    justify-content: center;
+}
+
+.about{
+    display: flex
+}
+
+.abouttext{
+    padding: 190px 0px 0px 120px;
+}
+
+.abouttext h1{
+    font-size: 65px;
+    width: 70%;
+    font-weight: 750;
+    letter-spacing: -5px;
+}
+
+.abouttext span{
+    color: rgb(3, 151, 70);
+}
+
+.abouttext p{
+    font-size: 18px;
+    width: 50%;
+    margin-top: 15px;
+}   
+
+
+.aboutimg{
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    
+}
+
+.aboutimg img{  
+    margin-top: 15px;
+    width: 100px;
+    height: 90px;
+}
+
+.abtn1{
+    width: 160px;
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 750;
+    margin-top: 20px;
+    border: none;
+    background-color:rgb(3, 151, 70);
+}
+
+.atext{
+    display: flex;
+    padding: 20px 0px 0px 0px ;
+    align-items: center;
+    gap: 30px;
+}
+
+.developer{
+    font-size: 40px; 
+}
+
+.developer p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.company{
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.company pre{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.abimg img{
+    width: 780px;
+    height: 680px;
+    filter:blur(0.6px) ;
+}
+
+@media (max-width: 768px) {
+
+    .abimg img{
+        width: 400px;
+        height: 800px;
+        filter:blur(0.6px);
+    }
+
+    .abouttext{
+        padding: 150px 0px 0px 30px;
+    }
+
+    .abouttext h1{
+        font-size: 65px;
+        width: 100%;
+    }
+
+    .abouttext p{
+        font-size: 18px;
+        width: 90%;
+        margin-top: 15px;
+    } 
+    
+    .atext{
+        padding: 20px 0px 0px 0px ;
+    }
+
+    .developer p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+
+    .company pre{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+    
+    .developer p{
+        width: 80%;
+    }
+
+    .developer{
+        font-size: 37px; 
+    }
+    
+    .company{
+        font-size: 37px;
+        margin-top: -30px;
+        margin-left: -30px;
+    }
+
+}
+
+/* <!----------------------
+about welcome section --------------> */
+
+.aboutwelcomsection{
+    padding: 80px 0px 0px 0px ;
+    text-align: center;
+}
+
+.aboutwelcom{
+    display: flex;
+    justify-content: center;
+}
+
+.aboutwelcomebtn{
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(56, 155, 72);
+    color: white;
+}
+
+.aboutcompany h1{
+    font-size: 32px;
+    padding-top: 10px;
+}
+
+.aboutcompany h1 span{
+    color: rgb(3, 151, 70);
+}
+
+.certificate{
+    padding: 50px 0px 0px 100px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.aboutcertificate img{
+    width: 700px;
+    height: 500px;
+}
+
+.certificatetext{
+    padding: 30px 0px 0px 0px;
+}
+
+.certificatetext p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 17px;
+    width: 60%;
+    margin-top: 10px;
+    line-height: 28px;
+}
+
+@media (max-width: 768px) {
+
+    .aboutcertificate img{
+        width: 350px;
+        height: 250px;
+    }
+
+    .certificate{
+        padding: 50px 0px 0px 10px;
+        gap: 50px;
+    }
+
+    .certificatetext p{
+        width: 95%;
+    }
+}
+
+
+.whosection{
+    display: flex;
+    padding: 80px 0px 0px 220px;
+}
+
+.who p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    text-align: left;
+    font-size: 17px;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.whotext{
+    font-size: 35px;
+    padding: 80px 280px 0px 0px;
+    width: 200%;
+}
+
+.whotext h1 span{
+    color: rgb(3, 151, 70);
+}
+
+
+
+.whatsection{
+    display: flex;
+    padding: 60px 0px 20px 220px;
+    gap: 250px;
+}
+
+.what{
+    font-size: 33px;
+    padding: 80px 0px 0px 0px;
+    width: 50%;
+    text-align: left;
+}
+
+.what h1 span{
+    color: rgb(3, 151, 70);
+}
+
+.whattext p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+    text-align: left;
+    font-size: 17px;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.whattext p a{
+    color: rgb(3, 151, 70);
+}
+
+@media (max-width: 768px) {
+
+    .whosection{
+        display: inline-block;
+        padding: 100px 0px 0px 40px;
+    }
+    
+    .who p{
+        width: 90%;
+        margin-top: 10px;
+    }
+    
+    .whotext{
+        font-size: 35px;
+        padding: 0px 300px 0px 0px;
+        margin-top: -320px;
+        width: 100%;
+    }
+
+    .whatsection{
+        display: inline-block;
+        padding: 250px 0px 0px 40px;    
+    }
+    
+    .what{
+        padding: 80px 0px 0px 0px;
+        width: 100%;
+    }
+
+    .whattext p{
+        width: 92%;
+    }
+    
+}
+
+/* <!----------------------
+about number section --------------> */
+
+
+.numbersection{
+    padding: 80px 0px 50px 0px;
+    text-align: center;
+}
+
+.number{
+    display: flex;
+    justify-content: center;
+}
+
+.numbtn{
+    width: 100px;
+    height: 30px;
+    font-size: 17px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(56, 155, 72);
+    color: white;
+}
+
+.num p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    padding-top: 15px;
+    width: 650px;
+    text-align: center;
+    line-height: 32px;
+}
+
+.salesbox{
+    padding: 50px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.salesrate{
+    width: 350px;
+    height: 340px;
+    background-color: rgb(249, 247, 238);
+    border-radius: 10px;
+    border: 1px solid rgb(203, 203, 203);
+}
+
+.salesrate h1{
+    font-size:60px;
+    padding-top: 50px;
+}
+
+.salesrate h1 sub{
+    font-size: 40px;
+}
+
+.salesrate h4{
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+.salesrate p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 10px;
+    line-height: 22px;
+    width: 320px;
+    text-align: center;
+    margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+    
+    .salesrate{
+        width: 240px;
+        height: 400px;
+    }
+
+    .salesrate p{
+        width: 220px;
+        text-align: center;
+        margin-left: 10px;
+    }
+}
+
+/* <!----------------------
+    about intro section -------------->  */
+
+.aboutintro{
+    padding: 40px 0px 0px 0px ;
+    text-align: center;
+}
+
+.aintro{
+    width: 70px;
+    height: 30px;
+    font-size: 17px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(56, 155, 72);
+    color: white;
+}
+
+.introbox{
+    display: flex;
+    justify-content: center;
+    padding: 60px 0px 20px 0px;
+    gap: 25px;
+    text-align: center;
+}
+
+.whointro,.whatintro,.howintro{
+    width: 350px;
+    height: 410px;
+    background-color: rgb(235, 233, 222);
+    border-radius: 20px;
+}
+
+.whointro h6,.whatintro h6,.howintro h6{
+    font-size: 14px;
+    padding-top: 40px;
+}
+
+.whointro img,.whatintro img,.howintro img {
+    width: 130px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.whointro p,.whatintro p,.howintro p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    width: 85%;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 1.4;
+}
+
+
+@media (max-width: 768px) {
+
+    .introbox{
+        padding: 40px 0px 20px 0px;
+        gap: 15px;
+    }
+
+    .whointro,.whatintro,.howintro{
+        width: 230px;
+        height: 440px;
+    }
+
+    .whointro h6,.whatintro h6,.howintro h6{
+        margin-top: 0px;
+    }
+
+    .whointro p,.whatintro p,.howintro p{
+        margin-top: 20px;
+        line-height: 1.4;
+    }
+
+    .whointro img,.whatintro img,.howintro img {
+        width: 130px;
+        height: 100px;
+        margin-top: 10px;
+    }
+}
+
+
+
+/* <!----------------------
+    about testimonial section --------------> */
+
+
+.testimonial{
+    padding: 150px 0px 0px 0px ;
+    justify-content: center;
+    display: flex;
+}    
+
+.testimonialbox{
+    display: flex;
+    background-color: rgb(242, 240, 230);
+    width: 1300px;
+    height: 430px;
+}
+
+.testimonialtex{
+    padding: 50px 0px 0px 120px;
+}
+
+.testimonials{
+    width: 120px;
+    height: 30px;
+    font-size: 17px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(56, 155, 72);
+    color: white;
+}
+
+.testimonialtex p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    width: 90%;
+    padding-top: 20px;
+    line-height: 1.8;
+}
+
+.testimg img{
+    position: relative;
+    width: 300px;
+    margin-right: 80px;
+    bottom: 50px;
+}
+
+@media (max-width: 768px) {
+
+    .testimonialbox{
+        height: auto;
+    }
+    
+    .testimonialtex{
+        padding: 50px 0px 0px 50px;
+    }
+    
+    .testimonialtex p{
+        width: 100%;
+    }
+    
+    .testimg img{
+        width: 260px;
+        margin-top: 130px;
+        margin-right: 20px;
+        bottom: 0px;
+    }
+}
+
+/* <!----------------------
+    about form section --------------> */
+
+.aboutform{
+    padding: 100px 0px 0px 0px;
+}    
+
+.aboutformbox{
+    display: flex;
+    background-color: rgb(237, 235, 225);
+}
+
+.formimg img{
+    width: 720px;
+    height: 430px;
+}   
+
+.aform{
+    margin-top: 120px;
+    margin-left: 80px;
+}
+
+.aform img{
+    width: 80px;
+    height: 80px;
+}
+
+.aform h3{
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.aform h3 span{
+    color: rgb(56, 155, 72);;
+}
+
+
+.formbtn{
+    display: flex;
+    margin-top: 30px;
+}
+
+.forminfo{
+    border: 1.5px solid black;
+    width: 350px;
+    height: 65px;
+    display: flex; 
+    gap: 15px; 
+    border-top-left-radius: 50px;  
+    border-bottom-left-radius: 50px; 
+}
+
+.name,.email{
+    width: 130px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 30px;
+    opacity: 80%;
+    border-style: none none solid;
+    background: none;
+    font-size: 18px;
+    border-radius: 0px;
+    border-color: black;
+    border-width: 1px;
+    outline: 0px solid transparent
+}
+
+.join{  
+    width: 130px;
+    height: 65px;
+    font-size: 30px;
+    border: none;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: rgb(3, 151, 70);
+    color: white;
+}
+
+.join:hover{
+    color: black;
+}
+
+
+@media (max-width: 768px) {
+    
+    .formimg img{
+        width:380px;
+        height: 480px;
+    }   
+    
+    .aform{
+        margin-top: 120px;
+        margin-left: 30px;
+    }
+
+    .forminfo{
+        width: 260px;
+    }
+
+    .name,.email{
+        width: 80px;
+    }
+    
+    .join{  
+        width: 90px;
+    }
+
+    .aform h3{
+        width: 80%;
+    }
+}
+
+/* <!----------------------
+    about client section -------------->   */
+
+.client{
+    padding: 100px 0px 50px 0px ;
+    text-align: center; 
+}
+
+.clients{
+    width: 110px;   
+    height: 30px;
+    font-size: 17px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(56, 155, 72);
+    color: white;
+}
+
+.clientbox{
+    display: flex;
+    justify-content: center;
+}
+
+
+.clientimg{
+    margin-top: 50px;
+    width: 1000px;
+    height: 200px;
+    border: none;
+}
+
+.clientlogo{
+    display: flex;
+}
+
+.clientlogo {
+    display: flex;
+    gap: 30px;
+}
+
+.logo1,.logo5,.logo7,.logo8,.logo10,.logo12,.logo13{
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.logo2,.logo3,.logo11{
+    width: 350px;
+    height: 80px;
+    margin-top: 20px;
+}
+
+.logo4,.logo6{
+    width: 400px;
+    height: 120px;
+    margin-top: 20px;
+}
+
+.logo9{
+    width: 0px;
+    height: 160px;
+    margin-top: 20px;
+}
+
+.logo1,.logo2,.logo3,.logo4,.logo5,.logo6,.logo7,
+.logo8,.logo9,.logo10,.logo11,.logo12,.logo13{
+    opacity: 50%;
+}
+
+.logo1:hover,.logo2:hover,.logo3:hover,.logo4:hover,.logo5:hover,.logo6:hover,.logo7:hover,
+.logo8:hover,.logo9:hover,.logo10:hover,.logo11:hover,.logo12:hover,.logo13:hover{
+    opacity: 100%;
+}
+
+@media (max-width: 768px) {
+    
+    .clientimg{
+        width: 700px;
+    }
+}
+
+
+/* <!----------------------
+footer section --------------> */
+
+.footer{
+    padding: 20px 0px 0px 0px;
+    
+}
+
+.footerhead{
+    padding: 50px 0px 120px 0px;
+    background-color: rgb(242, 240, 230);
+    display: flex;
+}
+
+.mainfoot{
+    display: flex;
+    gap: 80px;
+}
+
+.footer1{
+    margin-left: 250px;
+}
+
+.footer2{
+    margin-left: -180px;
+}
+
+.footer4{
+    margin-left: 60px;
+}
+
+.footer1 img{
+    width: 50px;
+    height: 50px;
+}
+
+.add{
+    margin-top: 20px;
+}
+
+.add h5{
+    font-size: 20px;
+}
+
+.add p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+    font-size: 17px;
+    width: 60%;
+}
+
+.footer2 h5,.footer3 h5,.footer4 h5{
+   font-size: 18px;
+}
+
+.footer2 ul,.footer3 ul,.footer4 ul{
+    list-style-type: none;
+    margin-top: 25px;       
+}   
+
+.footer2 ul li,.footer3 ul li,.footer4 ul li{
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.footer3 ul li{
+    margin-top: 24px;
+}
+
+.footer4 ul li{
+    margin-top: 25px;
+}
+
+.footer4 strong{
+    opacity: 55%;
+}
+
+.footer2 li:hover,.footer3 li:hover{
+    color:rgb(3, 151, 70) ;
+}
+
+.footer4  i{
+    color:rgb(3, 151, 70) ;
+}
+
+@media (max-width: 768px) { 
+
+    .footerhead{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer1{
+        margin-left: 30px;
+    }
+
+    .footer2{
+        margin-left: -120px;
+    }
+
+    .footer4{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+}

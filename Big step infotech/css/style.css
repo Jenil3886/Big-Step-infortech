@@ -728,7 +728,7 @@ our process section --------------> */
 
 .slidesbox{
     padding: 80px 350px 0px 350px;
-    background-image: url(image/bg/bg-process.png);
+    background-image: url(../image/bg/bg-process.png);
     background-position: 0px 120px;
     background-size: cover;
     background-repeat: no-repeat;
