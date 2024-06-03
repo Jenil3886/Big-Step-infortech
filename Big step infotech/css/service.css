@@ -1,0 +1,647 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(249, 247, 238);
+}
+
+
+/* <!-------------------
+---------------------
+   first page Start ------------
+   ---------------------> */
+
+
+
+/* <!----------------------------------------
+   Header Start ---------------------------------> */
+
+header{
+    background-color: rgb(248, 247, 238);
+    display: flex;
+    width: 100%;
+    padding: 3px 0px 0px 0px; 
+    justify-content: space-between;
+    align-items: center;  
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo img{
+    width: 60px;
+    height: 60px;
+    margin-left: 100px; 
+}
+
+.navbar{
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: 550;
+    margin-left: 380px;
+}
+
+.navbar a{
+    color: black; 
+}
+
+.navbar a:hover{
+    color: rgb(3, 151, 70);
+    border-bottom: 3px solid rgb(3, 151, 70);
+    transition: .5s;
+}
+
+.topbar{
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    color: rgb(3, 151, 70);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 130px;
+    border: 2px solid rgb(3, 151, 70);
+    background: transparent;
+}
+
+.topbar:hover{
+    background-color:rgb(3, 151, 70);
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+@media (max-width: 768px) {
+    header{
+        padding: 3px 0px 0px 0px; 
+    }
+
+    .logo img{
+        margin-left: 5px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .topbar{
+        display: none;
+    }
+}
+
+@media (max-width: 375px){
+
+    header{
+        padding: 5px 0px 0px 0px; 
+    }
+
+    .logo img{
+        margin-left: 10px;
+        width: 80px;
+        height:80px;
+    }
+
+}
+
+/* <!----------------------------------------
+   Header End ---------------------------------> */
+
+   /* <!-------------------------
+   --------------- service page start
+   ----------------------->     */
+
+.service{
+    padding: 120px 0px 0px 0px;
+    text-align: center;
+}   
+
+.services{
+    display: flex;
+    justify-content: center;
+}
+
+.servicebtn{
+    width: 90px;
+    height: 30px;
+    font-size: 17px;
+    border-radius: 50px;
+    border: none;   
+    background-color: rgb(56, 155, 72);
+    color: white;
+}
+
+.servicess h1{
+    font-size: 37px;
+    font-weight:750;
+    padding-top: 10px;
+}
+
+.servicess p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.servicebox{
+    padding: 60px 0px 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sbox1,.sbox2,.sbox3,.sbox4,.sbox5,.sbox6{
+    padding: 60px 150px 0px 150px;
+    background-color: rgb(242, 240, 230);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    gap: 80px;
+}
+
+.sinfo1 img,.sinfo2 img,.sinfo3 img,
+.sinfo4 img,.sinfo5 img,.sinfo6 img{
+    width: 650px;
+}
+
+.sinfotext,.sinfotext2,.sinfotext3,
+.sinfotext4,.sinfotext5,.sinfotext6{
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.sinfotext h2,.sinfotext2 h2,.sinfotext3 h2,
+.sinfotext4 h2,.sinfotext5 h2,.sinfotext6 h2{
+    font-size: 30px;
+}
+
+.sinfotext p,.sinfotext2 p,.sinfotext3 p,
+.sinfotext4 p,.sinfotext5 p,.sinfotext6 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.webtext p,.webtext2 p,.webtext3 p,
+.webtext4 p,.webtext5 p,.webtext6 p{
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    width: 90%;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    
+    .sbox1,.sbox2,.sbox3,.sbox4,.sbox5,.sbox6{
+        padding: 60px 30px 0px 30px;
+        gap: 25px;
+    }
+
+    .sinfo1 img,.sinfo2 img,.sinfo3 img,
+    .sinfo4 img,.sinfo5 img,.sinfo6 img{
+         width: 360px;
+         height: 380px;
+    }  
+
+    .sinfotext,.sinfotext2,.sinfotext3, 
+    .sinfotext4,.sinfotext5,.sinfotext6{
+        padding-top: 0px;
+    }
+
+
+    .webtext p,.webtext2 p,.webtext3 p,
+    .webtext4 p,.webtext5 p,.webtext6 p{
+         margin-top: 30px;
+         width: 100%;
+    }
+
+}
+
+
+/* <!----------------------
+promise section --------------> */
+
+.promise{
+    padding: 100px 0px 50px 0px;
+}
+
+.mainpromise{
+    background-color: rgb(242, 240, 230);
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.prom img{
+    width: 320px;
+}
+
+.promisetext{
+    padding: 50px 0px 0px 0px;
+}
+
+.promtext h5{
+    font-size: 35px;
+    color: rgb(3, 151, 70);
+}
+
+.promtext p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+}
+
+.prombox{
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.prombox1,.prombox2{
+    width: 350px;
+    height: 210px;
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 6px;
+    background-color: rgb(249, 247, 238);
+}
+
+.prombox1 h6,.prombox2 h6{
+    font-size: 20px;
+    margin-left: 130px;
+    margin-top: -60px;
+    color: black;
+}
+
+.prombox1 p,.prombox2 p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 180px;
+    font-size: 17px;
+    margin-left: 132px;
+    line-height: 25px;
+}
+
+.prombox2 p{
+    width: 180px;
+}
+
+.prombox1 img,.prombox2 img{
+    width: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.prombox2 img{
+    width: 65px;
+}
+
+.sig img{
+    width: 350px;
+    margin-top: -50px;
+}
+
+@media (max-width: 768px) {
+
+    .promtext h5{
+        text-align: center;
+    }
+    
+    .promtext p{
+        font-size: 18px;
+    }
+
+    .mainpromise{
+        gap: 30px;
+    }
+
+    .prom img{
+        width: 300px;
+        margin-top: 200px;
+        margin-left: 10px;
+    }
+
+    .prombox{
+        gap: 15px;
+    }
+    
+    .prombox1,.prombox2{
+        width: 200px;
+        height: 400px;
+    }
+
+    .prombox1 img{
+        width: 55px;
+    }
+
+    .prombox2 img{
+        width: 50px;
+    }
+
+    .prombox1 h6,.prombox2 h6{
+        font-size: 18px;
+        margin-left: 90px;
+        margin-top: -50px;
+        width: 100px;
+    }
+    .prombox2 h6{
+        margin-left: 80px;
+    }
+    
+    .prombox1 p,.prombox2 p{
+        width: 80px;
+        font-size: 17px;
+        margin-left: 90px;
+        line-height: 25px;
+    }
+    
+    .prombox2 p{
+      margin-left: 80px;
+    }
+}
+
+
+/* <!----------------------
+subscribe section --------------> */
+
+.subscribe{
+    padding: 50px 0px 50px 0px;
+}
+
+.sub1{
+    border: 1px solid rgb(203, 203, 203);
+    height: 0;
+}
+
+.sub2,.sub3,.sub4{
+    margin-top: 110px;
+    border: 0.5px solid rgb(203, 203, 203);
+    height: 0;
+}
+
+.sub3,.sub4{
+    margin-top: 70px;
+}
+
+.sub1 img,.sub2 img{
+    width: 120px;
+    margin-top: -50px;
+    margin-left: 300px;
+}
+
+.sub2 img{
+    width: 110px;
+    margin-left: 180px;
+}
+
+.sub3 img{
+    width: 150px;
+    margin-left: 200px;
+    margin-top: -50px;
+}
+
+.sub4 img{
+    width: 100px;
+    margin-left: 120px;
+    margin-top: -70px;
+}
+
+.subtext h1{
+    margin-left: 700px;     
+    font-size: 35px;
+}
+
+.subtext h1 span{
+    color:rgb(3, 151, 70) ;
+}
+
+.subbtn{
+    display: flex;
+    margin-left: 720px;
+    margin-top: -50px;
+}
+
+.subinfo{
+    border: 1.5px solid black;
+    width: 350px;
+    height: 70px;
+    display: flex; 
+    gap: 15px; 
+    border-top-left-radius: 50px;  
+    border-bottom-left-radius: 50px; 
+}
+
+.name,.email{
+    width: 130px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 30px;
+    opacity: 80%;
+    border-style: none none solid;
+    background: none;
+    font-size: 18px;
+    border-radius: 0px;
+    border-color: black;
+    border-width: 1px;
+    outline: 0px solid transparent
+}
+
+.join{  
+    width: 110px;
+    height: 70px;
+    font-size: 30px;
+    border: none;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: rgb(3, 151, 70);
+    color: white;
+}
+
+.join:hover{
+    color: black;
+}
+
+@media (max-width: 768px) {
+    
+    .sub1 img,.sub2 img{
+        margin-top: -50px;
+        margin-left: 100px;
+    }
+    
+    .sub2 img{
+        margin-left: 60px;
+        margin-top: -70px;
+    }
+    
+    .sub3 img{
+        margin-left: 50px;
+        margin-top: -50px;
+    }
+    
+    .sub4 img{
+        margin-left: 50px;
+        margin-top: -50px;
+    }   
+    
+    .subtext h1{
+        margin-left: 350px;     
+        font-size: 30px;
+    }
+
+    .subbtn{
+        display: flex;
+        margin-left: 370px;
+        margin-top: -55px;  
+    }
+    
+    .subinfo{
+        border: 1px solid rgb(121, 120, 116);
+        width: 250px;
+        height: 70px; 
+    }
+    
+    .name,.email{
+        width: 80px;
+        height: 30px;
+        margin-top: 30px;
+        margin-left: 30px;
+        font-size: 15px;
+
+    }
+
+    .join{  
+        width: 100px;
+        height: 70px;
+    }
+    
+}
+
+/* <!----------------------
+footer section --------------> */
+
+.footer{
+    padding: 20px 0px 0px 0px;
+    
+}
+
+.footerhead{
+    padding: 50px 0px 120px 0px;
+    background-color: rgb(242, 240, 230);
+    display: flex;
+}
+
+.mainfoot{
+    display: flex;
+    gap: 80px;
+}
+
+.footer1{
+    margin-left: 250px;
+}
+
+.footer2{
+    margin-left: -180px;
+}
+
+.footer4{
+    margin-left: 60px;
+}
+
+.footer1 img{
+    width: 50px;
+    height: 50px;
+}
+
+.add{
+    margin-top: 20px;
+}
+
+.add h5{
+    font-size: 20px;
+}
+
+.add p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5px;
+    font-size: 17px;
+    width: 60%;
+}
+
+.footer2 h5,.footer3 h5,.footer4 h5{
+   font-size: 18px;
+}
+
+.footer2 ul,.footer3 ul,.footer4 ul{
+    list-style-type: none;
+    margin-top: 25px;       
+}   
+
+.footer2 ul li,.footer3 ul li,.footer4 ul li{
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.footer3 ul li{
+    margin-top: 24px;
+}
+
+.footer4 ul li{
+    margin-top: 25px;
+}
+
+.footer4 strong{
+    opacity: 55%;
+}
+
+.footer2 li:hover,.footer3 li:hover{
+    color:rgb(3, 151, 70) ;
+}
+
+.footer4  i{
+    color:rgb(3, 151, 70) ;
+}
+
+@media (max-width: 768px) { 
+
+    .footerhead{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer1{
+        margin-left: 30px;
+    }
+    
+    .footer2{
+        margin-left: -120px;
+    }
+
+    .footer4{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+}

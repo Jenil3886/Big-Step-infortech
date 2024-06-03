@@ -1,0 +1,66 @@
+
+    </svg>
+  </button>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .navbar{
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+
+
+a {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a:hover .navbar:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="home.html">Home</a>
+      <a href="aboutus.html">About us</a>
+      <a href="product.html">Product</a>
+      <a href="service.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="#">Hire Developer</a>
+      <a href="#">Contact Us</a>
+  </div>
+    
+  </body>
+  </html>

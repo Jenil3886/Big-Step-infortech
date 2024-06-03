@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(249, 247, 238);
+}
+
+
+/* <!-------------------
+---------------------
+   first page Start ------------
+   ---------------------> */
+
+
+
+/* <!----------------------------------------
+   Header Start ---------------------------------> */
+
+header{
+    background-color: rgb(248, 247, 238);
+    display: flex;
+    width: 100%;
+    padding: 3px 0px 0px 0px; 
+    justify-content: space-between;
+    align-items: center;  
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo img{
+    width: 60px;
+    height: 60px;
+    margin-left: 100px; 
+}
+
+.navbar{
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: 550;
+    margin-left: 380px;
+}
+
+.navbar a{
+    color: black; 
+}
+
+.navbar a:hover{
+    color: rgb(3, 151, 70);
+    border-bottom: 3px solid rgb(3, 151, 70);
+    transition: .5s;
+}
+
+.topbar{
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    color: rgb(3, 151, 70);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    margin-right: 130px;
+    border: 2px solid rgb(3, 151, 70);
+    background: transparent;
+}
+
+.topbar:hover{
+    background-color:rgb(3, 151, 70);
+    color: white;
+    transition: 0.5s;
+}
+
+
+
+@media (max-width: 768px) {
+    header{
+        padding: 3px 0px 0px 0px; 
+    }
+
+    .logo img{
+        margin-left: 5px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .topbar{
+        display: none;
+    }
+}
+
+@media (max-width: 375px){
+
+    header{
+        padding: 5px 0px 0px 0px; 
+    }
+
+    .logo img{
+        margin-left: 10px;
+        width: 80px;
+        height:80px;
+    }
+
+}
+
+/* <!----------------------------------------
+   Header End ---------------------------------> */
+
+
+/* <!----------------------------------------
+   work section ---------------------------------> */   
+
+.worksection{
+    padding: 80px 0px 0px 0px;
+    text-align: center;
+}
+
+.works{
+    background-color: rgb(242, 240, 230);
+    height: 320px;
+}
+
+.work{
+    padding-top: 120px;
+}
+
+.work h1{
+   font-size: 55px;
+}
+
+.work p{
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.workbox{
+    padding: 80px 120px 0px 120px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.wbox{  
+    width: 620px;
+    height: 520px;
+    border: none;
+}
+
+.wbox img{
+    width: 617px;
+}
+
+.wtext{
+    padding: 30px 250px 0px 30px;
+    text-align: left;
+}
+
+.erp{
+    width: 60px;
+    height: 28px;
+    font-size: 15px;
+    border-radius: 50px;
+    background: none;
+    text-align: center;
+}
+
+ .wtext .wtextp p{
+    font-size: 28px;
+    margin-top: 20px;
+    width: 110%;
+}
+
+.wtext p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin-top: 15px;
+}

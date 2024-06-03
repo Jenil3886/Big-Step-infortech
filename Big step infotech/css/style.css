@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -65,13 +67,26 @@ header{
 
 .navbar a{
     color: black; 
+    text-decoration: none;
 }
 
-.navbar a:hover{
-    color: rgb(3, 151, 70);
-    border-bottom: 3px solid rgb(3, 151, 70);
-    transition: .5s;
+a::before {
+    margin-left: auto;
 }
+      
+a::after, a::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #039746;
+    display: block;
+    transition: 0.5s;
+}
+      
+a:hover::after, a:hover::before {
+    width: 100%;
+}
+
 
 .topbar{
     width: 180px;
@@ -728,7 +743,7 @@ our process section --------------> */
 
 .slidesbox{
     padding: 80px 350px 0px 350px;
-    background-image: url(../../image/bg/bg-process.png);
+    background-image: url(image/bg/bg-process.png);
     background-position: 0px 120px;
     background-size: cover;
     background-repeat: no-repeat;
